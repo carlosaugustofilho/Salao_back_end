@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\salao-app.props" />
+</Project>

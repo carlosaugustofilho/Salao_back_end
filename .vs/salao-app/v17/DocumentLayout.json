@@ -1,0 +1,251 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\user\\source\\repos\\salao-app\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B400D302-793C-4907-96A5-86EC81BE514B}|salao-app.Business\\salao-app.Business.csproj|c:\\users\\user\\source\\repos\\salao-app\\salao-app.business\\services\\usuarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B400D302-793C-4907-96A5-86EC81BE514B}|salao-app.Business\\salao-app.Business.csproj|solutionrelative:salao-app.business\\services\\usuarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{194B513A-C8CF-42BA-AEB7-EEE89F16ED0B}|salao-app\\salao-app.Application.csproj|c:\\users\\user\\source\\repos\\salao-app\\salao-app\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{194B513A-C8CF-42BA-AEB7-EEE89F16ED0B}|salao-app\\salao-app.Application.csproj|solutionrelative:salao-app\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DFF2B20-27CE-4370-AA15-9AD814668407}|salao-app.Repository\\salao-app.Repository.csproj|c:\\users\\user\\source\\repos\\salao-app\\salao-app.repository\\intefaces\\iusuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DFF2B20-27CE-4370-AA15-9AD814668407}|salao-app.Repository\\salao-app.Repository.csproj|solutionrelative:salao-app.repository\\intefaces\\iusuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B400D302-793C-4907-96A5-86EC81BE514B}|salao-app.Business\\salao-app.Business.csproj|c:\\users\\user\\source\\repos\\salao-app\\salao-app.business\\interfaces\\iusuarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B400D302-793C-4907-96A5-86EC81BE514B}|salao-app.Business\\salao-app.Business.csproj|solutionrelative:salao-app.business\\interfaces\\iusuarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DFF2B20-27CE-4370-AA15-9AD814668407}|salao-app.Repository\\salao-app.Repository.csproj|c:\\users\\user\\source\\repos\\salao-app\\salao-app.repository\\services\\usuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DFF2B20-27CE-4370-AA15-9AD814668407}|salao-app.Repository\\salao-app.Repository.csproj|solutionrelative:salao-app.repository\\services\\usuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79AFCF20-DC66-48A6-8E70-EC3F3FE0B99A}|salao-app.Models\\salao-app.Models.csproj|c:\\users\\user\\source\\repos\\salao-app\\salao-app.models\\dto\\usuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79AFCF20-DC66-48A6-8E70-EC3F3FE0B99A}|salao-app.Models\\salao-app.Models.csproj|solutionrelative:salao-app.models\\dto\\usuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79AFCF20-DC66-48A6-8E70-EC3F3FE0B99A}|salao-app.Models\\salao-app.Models.csproj|c:\\users\\user\\source\\repos\\salao-app\\salao-app.models\\requests\\novousuariorequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79AFCF20-DC66-48A6-8E70-EC3F3FE0B99A}|salao-app.Models\\salao-app.Models.csproj|solutionrelative:salao-app.models\\requests\\novousuariorequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DFF2B20-27CE-4370-AA15-9AD814668407}|salao-app.Repository\\salao-app.Repository.csproj|c:\\users\\user\\source\\repos\\salao-app\\salao-app.repository\\enum\\papelusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DFF2B20-27CE-4370-AA15-9AD814668407}|salao-app.Repository\\salao-app.Repository.csproj|solutionrelative:salao-app.repository\\enum\\papelusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DFF2B20-27CE-4370-AA15-9AD814668407}|salao-app.Repository\\salao-app.Repository.csproj|c:\\users\\user\\source\\repos\\salao-app\\salao-app.repository\\maps\\usuariomap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DFF2B20-27CE-4370-AA15-9AD814668407}|salao-app.Repository\\salao-app.Repository.csproj|solutionrelative:salao-app.repository\\maps\\usuariomap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{194B513A-C8CF-42BA-AEB7-EEE89F16ED0B}|salao-app\\salao-app.Application.csproj|c:\\users\\user\\source\\repos\\salao-app\\salao-app\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{194B513A-C8CF-42BA-AEB7-EEE89F16ED0B}|salao-app\\salao-app.Application.csproj|solutionrelative:salao-app\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DFF2B20-27CE-4370-AA15-9AD814668407}|salao-app.Repository\\salao-app.Repository.csproj|c:\\users\\user\\source\\repos\\salao-app\\salao-app.repository\\handlers\\datetimehandler .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DFF2B20-27CE-4370-AA15-9AD814668407}|salao-app.Repository\\salao-app.Repository.csproj|solutionrelative:salao-app.repository\\handlers\\datetimehandler .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 13,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:134:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:137:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:140:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:146:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:139:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:135:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IUsuarioService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\salao-app\\salao-app.Business\\Interfaces\\IUsuarioService.cs",
+              "RelativeDocumentMoniker": "salao-app.Business\\Interfaces\\IUsuarioService.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\salao-app\\salao-app.Business\\Interfaces\\IUsuarioService.cs",
+              "RelativeToolTip": "salao-app.Business\\Interfaces\\IUsuarioService.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAtwBIAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T20:55:34.439Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UsuarioController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\salao-app\\salao-app\\Controllers\\UsuarioController.cs",
+              "RelativeDocumentMoniker": "salao-app\\Controllers\\UsuarioController.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\salao-app\\salao-app\\Controllers\\UsuarioController.cs",
+              "RelativeToolTip": "salao-app\\Controllers\\UsuarioController.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAAADAAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T20:46:31.472Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UsuarioService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\salao-app\\salao-app.Business\\Services\\UsuarioService.cs",
+              "RelativeDocumentMoniker": "salao-app.Business\\Services\\UsuarioService.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\salao-app\\salao-app.Business\\Services\\UsuarioService.cs",
+              "RelativeToolTip": "salao-app.Business\\Services\\UsuarioService.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAmwBwAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T20:46:19.601Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UsuarioDto.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\salao-app\\salao-app.Models\\Dto\\UsuarioDto.cs",
+              "RelativeDocumentMoniker": "salao-app.Models\\Dto\\UsuarioDto.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\salao-app\\salao-app.Models\\Dto\\UsuarioDto.cs",
+              "RelativeToolTip": "salao-app.Models\\Dto\\UsuarioDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T20:46:11.213Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "NovoUsuarioRequest.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\salao-app\\salao-app.Models\\Requests\\NovoUsuarioRequest.cs",
+              "RelativeDocumentMoniker": "salao-app.Models\\Requests\\NovoUsuarioRequest.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\salao-app\\salao-app.Models\\Requests\\NovoUsuarioRequest.cs",
+              "RelativeToolTip": "salao-app.Models\\Requests\\NovoUsuarioRequest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T20:46:00.486Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "PapelUsuario.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\salao-app\\salao-app.Repository\\Enum\\PapelUsuario.cs",
+              "RelativeDocumentMoniker": "salao-app.Repository\\Enum\\PapelUsuario.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\salao-app\\salao-app.Repository\\Enum\\PapelUsuario.cs",
+              "RelativeToolTip": "salao-app.Repository\\Enum\\PapelUsuario.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T20:45:28.851Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IUsuarioRepository.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\salao-app\\salao-app.Repository\\Intefaces\\IUsuarioRepository.cs",
+              "RelativeDocumentMoniker": "salao-app.Repository\\Intefaces\\IUsuarioRepository.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\salao-app\\salao-app.Repository\\Intefaces\\IUsuarioRepository.cs",
+              "RelativeToolTip": "salao-app.Repository\\Intefaces\\IUsuarioRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAUAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T20:45:13.503Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UsuarioMap.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\salao-app\\salao-app.Repository\\Maps\\UsuarioMap.cs",
+              "RelativeDocumentMoniker": "salao-app.Repository\\Maps\\UsuarioMap.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\salao-app\\salao-app.Repository\\Maps\\UsuarioMap.cs",
+              "RelativeToolTip": "salao-app.Repository\\Maps\\UsuarioMap.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T20:45:01.965Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UsuarioRepository.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\salao-app\\salao-app.Repository\\Services\\UsuarioRepository.cs",
+              "RelativeDocumentMoniker": "salao-app.Repository\\Services\\UsuarioRepository.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\salao-app\\salao-app.Repository\\Services\\UsuarioRepository.cs",
+              "RelativeToolTip": "salao-app.Repository\\Services\\UsuarioRepository.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAYwAYAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T20:44:27.191Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "DateTimeHandler .cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\salao-app\\salao-app.Repository\\Handlers\\DateTimeHandler .cs",
+              "RelativeDocumentMoniker": "salao-app.Repository\\Handlers\\DateTimeHandler .cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\salao-app\\salao-app.Repository\\Handlers\\DateTimeHandler .cs",
+              "RelativeToolTip": "salao-app.Repository\\Handlers\\DateTimeHandler .cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T19:17:03.856Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Startup.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\salao-app\\salao-app\\Startup.cs",
+              "RelativeDocumentMoniker": "salao-app\\Startup.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\salao-app\\salao-app\\Startup.cs",
+              "RelativeToolTip": "salao-app\\Startup.cs",
+              "ViewState": "AQIAADwAAAAAAAAAAAAAAFEAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T13:16:28.503Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
