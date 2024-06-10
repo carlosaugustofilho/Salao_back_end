@@ -7,7 +7,6 @@ namespace salao_app.Business.Interfaces
     {
         List<HorariolMap> BuscarTodosHorarios(DateTime data);
         HorariolMap BuscarHorarioPorId(int horarioId);
-       // void AgendarHorario(HorariolMap horario);
         void AtualizarHorario(HorariolMap horario);
         void DeletarHorario(int horarioId);
     }

@@ -9,12 +9,9 @@ namespace salao_app.Repository.Maps
 {
     public class ClienteMap
     {
-        public int? clienteId { get; set; }
+        public int clienteId { get; set; }
         public int usuarioId { get; set; }
-        public string telefone { get; set; }
-
         public string nome { get; set; }
-
         public string email { get; set; }
 
         public BarbeiroMap Barbeiro { get; set; }

@@ -38,30 +38,6 @@ namespace salao_app.Controllers
             return Ok(horario);
         }
 
-        //[HttpPost]
-        //[Route("/api/Horario/AgendarHorario")]
-        //public IActionResult AgendarHorario([FromBody] HorariolMap horario)
-        //{
-        //    try
-        //    {
-        //        _horarioService.AgendarHorario(horario);
-        //        return CreatedAtAction(nameof(AgendarHorario), new { id = horario.HorarioId }, horario);
-        //    }
-        //        catch (Exception ex)
-        //    {
-        //        _logger.LogError(ex, "Erro ao agendar horário: {Message}", ex.Message);
-        //        return BadRequest($"Houve um erro: {ex.Message}");
-        //    }
-        //}
-
-        //[HttpPost]
-        //[Route("/api/Horario/AgendarHorario")]
-        //public IActionResult AgendarHorario([FromBody] HorariolMap horario)
-        //{
-        //    _horarioService.AgendarHorario(horario);
-        //    return CreatedAtAction(nameof(AgendarHorario), new { id = horario.HorarioId }, horario);
-        //}
-
         [HttpDelete]
         [Route("/api/HorarioDisponivel/DeletarHorario/")]
         public IActionResult DeleteHorario(int id)

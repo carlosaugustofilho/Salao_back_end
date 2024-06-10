@@ -10,13 +10,12 @@ namespace salao_app.Repository.Maps
     {
         public int BarbeiroId { get; set; }
         public string Nome { get; set; }
-
         public DateTime horaInico { get; set; }
         public DateTime horaFim { get; set; }
-        public string email { get; set; }
+        public string Email { get; set; }
         public string Descricao { get; set; }
         public string UrlFoto { get; set; }
-
+        public int UsuarioId { get; set; } 
 
     }
 }

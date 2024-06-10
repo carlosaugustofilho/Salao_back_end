@@ -630,6 +630,7 @@
       "salao-app.Business/1.0.0": {
         "dependencies": {
           "Microsoft.IdentityModel.Tokens": "6.35.0",
+          "System.IdentityModel.Tokens.Jwt": "6.35.0",
           "salao-app.Models": "1.0.0",
           "salao-app.Repository": "1.0.0"
         },
@@ -650,7 +651,8 @@
           "Dapper": "2.1.35",
           "Microsoft.Extensions.Configuration.Abstractions": "8.0.0",
           "MySql.Data": "8.3.0",
-          "MySql.EntityFrameworkCore": "8.0.0"
+          "MySql.EntityFrameworkCore": "8.0.0",
+          "System.IdentityModel.Tokens.Jwt": "6.35.0"
         },
         "runtime": {
           "salao-app.Repository.dll": {}

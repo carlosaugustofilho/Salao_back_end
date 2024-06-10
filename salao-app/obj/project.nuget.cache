@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "qjdGkofOlpXpYBdZam3nNa3zUngN/7ZglvKoyBBeceRv2jqtvWQoQ7SpLp58QuplVKqYB4uhR6hZL2gi/5qKZA==",
+  "dgSpecHash": "qWoeoFepB7LTFxZWR2cStdebrmzrSywjqx7iXVljZAqelL11mMMJ3Y3E8PKegl9N/pDQpkzvB6lRPEXDqDb2mw==",
   "success": true,
-  "projectFilePath": "C:\\Projetos\\salao\\salao-app\\salao-app.Application.csproj",
+  "projectFilePath": "C:\\Users\\Carlos\\source\\repos\\Salao_back_end\\salao-app\\salao-app.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Carlos\\.nuget\\packages\\bouncycastle.cryptography\\2.2.1\\bouncycastle.cryptography.2.2.1.nupkg.sha512",
     "C:\\Users\\Carlos\\.nuget\\packages\\dapper\\2.1.35\\dapper.2.1.35.nupkg.sha512",

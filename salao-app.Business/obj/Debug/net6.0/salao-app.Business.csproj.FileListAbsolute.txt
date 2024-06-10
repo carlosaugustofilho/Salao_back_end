@@ -15,3 +15,37 @@ C:\Users\user\source\repos\salao-app\salao-app.Business\bin\Debug\net6.0\salao-a
 C:\Users\user\source\repos\salao-app\salao-app.Business\bin\Debug\net6.0\salao-app.Models.pdb
 C:\Users\user\source\repos\salao-app\salao-app.Business\bin\Debug\net6.0\salao-app.Repository.pdb
 C:\Users\user\source\repos\salao-app\salao-app.Business\obj\Debug\net6.0\salao-ap.8452326B.Up2Date
+C:\Users\user\source\repos\salao-app - Copia\salao-app.Business\bin\Debug\net6.0\salao-app.Business.deps.json
+C:\Users\user\source\repos\salao-app - Copia\salao-app.Business\bin\Debug\net6.0\salao-app.Business.dll
+C:\Users\user\source\repos\salao-app - Copia\salao-app.Business\bin\Debug\net6.0\salao-app.Business.pdb
+C:\Users\user\source\repos\salao-app - Copia\salao-app.Business\bin\Debug\net6.0\salao-app.Models.dll
+C:\Users\user\source\repos\salao-app - Copia\salao-app.Business\bin\Debug\net6.0\salao-app.Repository.dll
+C:\Users\user\source\repos\salao-app - Copia\salao-app.Business\bin\Debug\net6.0\salao-app.Models.pdb
+C:\Users\user\source\repos\salao-app - Copia\salao-app.Business\bin\Debug\net6.0\salao-app.Repository.pdb
+C:\Users\user\source\repos\salao-app - Copia\salao-app.Business\obj\Debug\net6.0\salao-app.Business.csproj.AssemblyReference.cache
+C:\Users\user\source\repos\salao-app - Copia\salao-app.Business\obj\Debug\net6.0\salao-app.Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\source\repos\salao-app - Copia\salao-app.Business\obj\Debug\net6.0\salao-app.Business.AssemblyInfoInputs.cache
+C:\Users\user\source\repos\salao-app - Copia\salao-app.Business\obj\Debug\net6.0\salao-app.Business.AssemblyInfo.cs
+C:\Users\user\source\repos\salao-app - Copia\salao-app.Business\obj\Debug\net6.0\salao-app.Business.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\salao-app - Copia\salao-app.Business\obj\Debug\net6.0\salao-ap.8452326B.Up2Date
+C:\Users\user\source\repos\salao-app - Copia\salao-app.Business\obj\Debug\net6.0\salao-app.Business.dll
+C:\Users\user\source\repos\salao-app - Copia\salao-app.Business\obj\Debug\net6.0\refint\salao-app.Business.dll
+C:\Users\user\source\repos\salao-app - Copia\salao-app.Business\obj\Debug\net6.0\salao-app.Business.pdb
+C:\Users\user\source\repos\salao-app - Copia\salao-app.Business\obj\Debug\net6.0\ref\salao-app.Business.dll
+C:\Projetos\salao-app - Copia\salao-app.Business\bin\Debug\net6.0\salao-app.Business.deps.json
+C:\Projetos\salao-app - Copia\salao-app.Business\bin\Debug\net6.0\salao-app.Business.dll
+C:\Projetos\salao-app - Copia\salao-app.Business\bin\Debug\net6.0\salao-app.Business.pdb
+C:\Projetos\salao-app - Copia\salao-app.Business\bin\Debug\net6.0\salao-app.Models.dll
+C:\Projetos\salao-app - Copia\salao-app.Business\bin\Debug\net6.0\salao-app.Repository.dll
+C:\Projetos\salao-app - Copia\salao-app.Business\bin\Debug\net6.0\salao-app.Models.pdb
+C:\Projetos\salao-app - Copia\salao-app.Business\bin\Debug\net6.0\salao-app.Repository.pdb
+C:\Projetos\salao-app - Copia\salao-app.Business\obj\Debug\net6.0\salao-app.Business.csproj.AssemblyReference.cache
+C:\Projetos\salao-app - Copia\salao-app.Business\obj\Debug\net6.0\salao-app.Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projetos\salao-app - Copia\salao-app.Business\obj\Debug\net6.0\salao-app.Business.AssemblyInfoInputs.cache
+C:\Projetos\salao-app - Copia\salao-app.Business\obj\Debug\net6.0\salao-app.Business.AssemblyInfo.cs
+C:\Projetos\salao-app - Copia\salao-app.Business\obj\Debug\net6.0\salao-app.Business.csproj.CoreCompileInputs.cache
+C:\Projetos\salao-app - Copia\salao-app.Business\obj\Debug\net6.0\salao-app.Business.csproj.CopyComplete
+C:\Projetos\salao-app - Copia\salao-app.Business\obj\Debug\net6.0\salao-app.Business.dll
+C:\Projetos\salao-app - Copia\salao-app.Business\obj\Debug\net6.0\refint\salao-app.Business.dll
+C:\Projetos\salao-app - Copia\salao-app.Business\obj\Debug\net6.0\salao-app.Business.pdb
+C:\Projetos\salao-app - Copia\salao-app.Business\obj\Debug\net6.0\ref\salao-app.Business.dll

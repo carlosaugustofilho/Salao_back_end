@@ -13,3 +13,33 @@ C:\Users\user\source\repos\salao-app\salao-app.Models\obj\Debug\net6.0\ref\salao
 C:\Users\user\source\repos\salao-app\salao-app.Models\bin\Debug\net6.0\salao-app.Repository.dll
 C:\Users\user\source\repos\salao-app\salao-app.Models\bin\Debug\net6.0\salao-app.Repository.pdb
 C:\Users\user\source\repos\salao-app\salao-app.Models\obj\Debug\net6.0\salao-ap.2B26501E.Up2Date
+C:\Users\user\source\repos\salao-app - Copia\salao-app.Models\bin\Debug\net6.0\salao-app.Models.deps.json
+C:\Users\user\source\repos\salao-app - Copia\salao-app.Models\bin\Debug\net6.0\salao-app.Models.dll
+C:\Users\user\source\repos\salao-app - Copia\salao-app.Models\bin\Debug\net6.0\salao-app.Models.pdb
+C:\Users\user\source\repos\salao-app - Copia\salao-app.Models\bin\Debug\net6.0\salao-app.Repository.dll
+C:\Users\user\source\repos\salao-app - Copia\salao-app.Models\bin\Debug\net6.0\salao-app.Repository.pdb
+C:\Users\user\source\repos\salao-app - Copia\salao-app.Models\obj\Debug\net6.0\salao-app.Models.csproj.AssemblyReference.cache
+C:\Users\user\source\repos\salao-app - Copia\salao-app.Models\obj\Debug\net6.0\salao-app.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\source\repos\salao-app - Copia\salao-app.Models\obj\Debug\net6.0\salao-app.Models.AssemblyInfoInputs.cache
+C:\Users\user\source\repos\salao-app - Copia\salao-app.Models\obj\Debug\net6.0\salao-app.Models.AssemblyInfo.cs
+C:\Users\user\source\repos\salao-app - Copia\salao-app.Models\obj\Debug\net6.0\salao-app.Models.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\salao-app - Copia\salao-app.Models\obj\Debug\net6.0\salao-ap.2B26501E.Up2Date
+C:\Users\user\source\repos\salao-app - Copia\salao-app.Models\obj\Debug\net6.0\salao-app.Models.dll
+C:\Users\user\source\repos\salao-app - Copia\salao-app.Models\obj\Debug\net6.0\refint\salao-app.Models.dll
+C:\Users\user\source\repos\salao-app - Copia\salao-app.Models\obj\Debug\net6.0\salao-app.Models.pdb
+C:\Users\user\source\repos\salao-app - Copia\salao-app.Models\obj\Debug\net6.0\ref\salao-app.Models.dll
+C:\Projetos\salao-app - Copia\salao-app.Models\bin\Debug\net6.0\salao-app.Models.deps.json
+C:\Projetos\salao-app - Copia\salao-app.Models\bin\Debug\net6.0\salao-app.Models.dll
+C:\Projetos\salao-app - Copia\salao-app.Models\bin\Debug\net6.0\salao-app.Models.pdb
+C:\Projetos\salao-app - Copia\salao-app.Models\bin\Debug\net6.0\salao-app.Repository.dll
+C:\Projetos\salao-app - Copia\salao-app.Models\bin\Debug\net6.0\salao-app.Repository.pdb
+C:\Projetos\salao-app - Copia\salao-app.Models\obj\Debug\net6.0\salao-app.Models.csproj.AssemblyReference.cache
+C:\Projetos\salao-app - Copia\salao-app.Models\obj\Debug\net6.0\salao-app.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projetos\salao-app - Copia\salao-app.Models\obj\Debug\net6.0\salao-app.Models.AssemblyInfoInputs.cache
+C:\Projetos\salao-app - Copia\salao-app.Models\obj\Debug\net6.0\salao-app.Models.AssemblyInfo.cs
+C:\Projetos\salao-app - Copia\salao-app.Models\obj\Debug\net6.0\salao-app.Models.csproj.CoreCompileInputs.cache
+C:\Projetos\salao-app - Copia\salao-app.Models\obj\Debug\net6.0\salao-app.Models.csproj.CopyComplete
+C:\Projetos\salao-app - Copia\salao-app.Models\obj\Debug\net6.0\salao-app.Models.dll
+C:\Projetos\salao-app - Copia\salao-app.Models\obj\Debug\net6.0\refint\salao-app.Models.dll
+C:\Projetos\salao-app - Copia\salao-app.Models\obj\Debug\net6.0\salao-app.Models.pdb
+C:\Projetos\salao-app - Copia\salao-app.Models\obj\Debug\net6.0\ref\salao-app.Models.dll

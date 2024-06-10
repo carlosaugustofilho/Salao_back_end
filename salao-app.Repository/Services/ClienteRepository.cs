@@ -1,12 +1,12 @@
-﻿
-using carvao_app.Repository.Conexao;
-using Dapper;
+﻿using Dapper;
 using Microsoft.Extensions.Configuration;
 using MySql.Data.MySqlClient;
+using salao_app.Repository.Conexao;
 using salao_app.Repository.Intefaces;
 using salao_app.Repository.Maps;
-using SalaoApp.Models;
-using static Dapper.SqlMapper;
+using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace salao_app.Repository.Services
 {
@@ -19,7 +19,7 @@ namespace salao_app.Repository.Services
             _configuration = configuration;
         }
 
-        public ClienteMap BuscarClientesId(int id)
+        public ClienteMap BuscarClientePorId(int id)
         {
             var parameters = new DynamicParameters();
             parameters.Add("@Id", id);
@@ -30,36 +30,28 @@ namespace salao_app.Repository.Services
         {
             var clientes = new DynamicParameters();
             clientes.Add("@nome", cliente.nome);
-            clientes.Add("usuario_id", cliente.usuarioId);
-            clientes.Add("@telefone", cliente.telefone);
+            clientes.Add("@usuario_id", cliente.usuarioId);
             clientes.Add("@email", cliente.email);
 
-            var query = "INSERT INTO cliente(nome, usuario_id, telefone, email) VALUES (@nome, @usuario_id, @telefone, @email)";
+            var query = "INSERT INTO cliente(nome, usuario_id, email) VALUES (@nome, @usuario_id, @email)";
             DataBase.Execute(_configuration, query, clientes);
         }
 
-        public ClienteMap BuscarClientePorId(int id)
+        public ClienteMap BuscarClientePorUsuarioId(int usuarioId)
         {
             var parameters = new DynamicParameters();
-            parameters.Add("@Id", id);
-            var query = "SELECT cliente_id clienteId , nome, email, telefone FROM cliente WHERE cliente_id = @Id";
-            var cliente = DataBase.Execute<ClienteMap>(_configuration, query, parameters).FirstOrDefault();
+            parameters.Add("@UsuarioId", usuarioId);
 
-            if (cliente != null)
-            {
-                return cliente;
-            }
-            else
-            {
-                throw new Exception("Cliente não encontrado");
-            }
+            var query = "SELECT * FROM Cliente WHERE usuario_id = @UsuarioId";
+            return DataBase.Execute<ClienteMap>(_configuration, query, parameters).FirstOrDefault();
         }
+
 
         public List<ClienteMap> BuscarClientes(string nome, string email)
         {
             var parameters = new DynamicParameters();
             parameters.Add("@nome", "%" + nome + "%");
-            var query = "SELECT * FROM cliente_id clienteId WHERE nome LIKE @nome";
+            var query = "SELECT cliente_id clienteId, nome, email FROM cliente WHERE nome LIKE @nome";
 
             if (!string.IsNullOrEmpty(email))
             {
@@ -69,49 +61,42 @@ namespace salao_app.Repository.Services
 
             var retorno = DataBase.Execute<ClienteMap>(_configuration, query, parameters).ToList();
 
-            foreach (var cliente in retorno)
-            {
-                cliente.clienteId ??= 0;
-            }
-
+            
             return retorno.OrderBy(c => c.clienteId).ToList();
         }
 
         public void AgendarHorarioCliente(int clienteId, int barbeiroId, DateTime data, TimeSpan horaInicio, TimeSpan horaFim, int usuarioId)
         {
-            if (data == DateTime.MinValue)
-                data = DateTime.Now.Date;
+            //Console.WriteLine($"Tentando agendar horário para ClienteID: {clienteId}, BarbeiroID: {barbeiroId}");
 
-            if (data < DateTime.Now.Date)
-                throw new ArgumentException("Não é possível agendar horários para datas anteriores ao dia atual.");
+            //var cliente = BuscarClientePorId(clienteId);
+            //if (cliente == null)
+            //{
+            //    Console.WriteLine("Cliente não encontrado");
+            //    throw new Exception("Cliente não encontrado");
+            //}
+                      
+            if (data == DateTime.MinValue) data = DateTime.Now.Date;
+            if (data < DateTime.Now.Date) throw new ArgumentException("Data não pode ser anterior ao dia atual.");
+            if (horaInicio == TimeSpan.Zero || horaFim == TimeSpan.Zero) throw new ArgumentException("Horas de início e fim não podem ser nulas.");
+            if (barbeiroId <= 0) throw new ArgumentException("Identificador do barbeiro é inválido.");
 
-            if (horaInicio == TimeSpan.Zero || horaFim == TimeSpan.Zero)
-                throw new ArgumentException("Horas de início e fim não podem ser nulas.");
+            var horarioId = VerificarHorarioDisponivel(barbeiroId, data, horaInicio, horaFim);
+            if (horarioId == 0) throw new Exception("Não há horário disponível para este dia e hora.");
 
-            if (barbeiroId <= 0)
-                throw new ArgumentException("Identificador do barbeiro é inválido.");
+            var parameters = new DynamicParameters();
+            parameters.Add("@cliente_id", clienteId);
+            parameters.Add("@barbeiro_id", barbeiroId);
+            parameters.Add("@data_hora_agendamento", data.Add(horaInicio));
+            parameters.Add("@status", "Agendado");
+            parameters.Add("@horario_disponiveis_id", horarioId);
 
-            int horarioId = VerificarHorarioDisponivel(barbeiroId, data, horaInicio, horaFim);
-            if (horarioId == 0)
-                throw new Exception("Não há horário disponível para este dia e hora.");
-
-            var agendamentoparameters = new DynamicParameters();
-            agendamentoparameters.Add("@usuario_id", usuarioId);
-            agendamentoparameters.Add("@barbeiro_id", barbeiroId);
-            agendamentoparameters.Add("@data_hora_agendamento", data.Add(horaInicio));
-            agendamentoparameters.Add("@status", "Agendado");
-            agendamentoparameters.Add("@horario_disponiveis_id", horarioId);
-
-            var queryAgendamento = @"
-        INSERT INTO agendamentos (usuario_id, barbeiro_id, data_hora_agendamento, status, horario_disponiveis_id) 
-        VALUES (@usuario_id, @barbeiro_id, @data_hora_agendamento, @status, @horario_disponiveis_id);
-    ";
-            DataBase.Execute(_configuration, queryAgendamento, agendamentoparameters);
+            var query = "INSERT INTO agendamentos (cliente_id, barbeiro_id, data_hora_agendamento, status, horario_disponiveis_id) VALUES (@cliente_id, @barbeiro_id, @data_hora_agendamento, @status, @horario_disponiveis_id)";
+            DataBase.Execute(_configuration, query, parameters);
 
             var updateParameters = new DynamicParameters();
             updateParameters.Add("@horarioId", horarioId);
-
-            var updateQuery = "UPDATE Horario_disponivel SET disponivel = 0 WHERE id = @horarioId";
+            var updateQuery = "UPDATE horario_disponivel SET disponivel = 0 WHERE id = @horarioId";
             DataBase.Execute(_configuration, updateQuery, updateParameters);
         }
 
@@ -119,13 +104,13 @@ namespace salao_app.Repository.Services
         private int VerificarHorarioDisponivel(int barbeiroId, DateTime data, TimeSpan horaInicio, TimeSpan horaFim)
         {
             var query = @"
-                SELECT COUNT(*)
-                FROM Horario_disponivel
+                SELECT id
+                FROM horario_disponivel
                 WHERE barbeiro_id = @barbeiroId
                 AND data = @data
                 AND hora_inicio <= @horaInicio
                 AND hora_fim >= @horaFim
-                AND disponivel = 1
+                AND disponivel IS NOT NULL
             ";
 
             var parameters = new DynamicParameters();
@@ -137,6 +122,7 @@ namespace salao_app.Repository.Services
             var horarioId = DataBase.Execute<int>(_configuration, query, parameters).FirstOrDefault();
             return horarioId;
         }
+
 
         public void CancelarAgendamento(int agendamentoId)
         {
@@ -163,8 +149,33 @@ namespace salao_app.Repository.Services
             var updateParameters = new DynamicParameters();
             updateParameters.Add("@horarioId", horarioId);
 
-            var updateQuery = "UPDATE Horario_disponivel SET disponivel = 1 WHERE id = @horarioId";
+            var updateQuery = "UPDATE horario_disponivel SET disponivel = 1 WHERE id = @horarioId";
             DataBase.Execute(_configuration, updateQuery, updateParameters);
+        }
+
+        public List<HorarioDisponivelMap> ObterHorariosDisponiveis(int barbeiroId)
+        {
+            var parameters = new DynamicParameters();
+            parameters.Add("@barbeiroId", barbeiroId);
+
+            var query = @"
+            SELECT id AS Id, barbeiro_id AS BarbeiroId, hora_inicio AS HoraInicio, hora_fim AS HoraFim, data AS Data 
+            FROM horario_disponivel 
+            WHERE barbeiro_id = @barbeiroId AND disponivel = 1
+            ORDER BY data, hora_inicio";  
+
+            return DataBase.Execute<HorarioDisponivelMap>(_configuration, query, parameters).ToList();
+        }
+
+
+        public void AtualizarStatusHorario(int id, bool disponivel)
+        {
+            var query = "UPDATE horario_disponivel SET disponivel = @disponivel WHERE id = @id";
+            var parameters = new DynamicParameters();
+            parameters.Add("@id", id);
+            parameters.Add("@disponivel", disponivel ? 1 : 0);
+
+            DataBase.Execute(_configuration, query, parameters);
         }
 
         public void AtualizarCliente(ClienteMap cliente)
@@ -179,19 +190,17 @@ namespace salao_app.Repository.Services
 
         public bool ExistCliente(ClienteMap request)
         {
-            var query = !string.IsNullOrEmpty(request.email) ? "Email = @Email" : "Telefone = @Telefone";
+            var query = !string.IsNullOrEmpty(request.email) ? "Email = @Email" : "nome = @nome";
 
             using var connection = new MySqlConnection(_configuration["DefaultConnection"]);
 
             var exist = connection.QueryFirstOrDefault<ClienteMap>("SELECT * FROM cliente WHERE " + query, new
             {
                 request.email,
-                request.telefone
+
             });
 
             return exist != null;
         }
-
-       
     }
 }

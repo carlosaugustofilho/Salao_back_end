@@ -3,12 +3,11 @@ using Microsoft.Extensions.Configuration;
 using MySql.Data.MySqlClient;
 using System.Data;
 
-namespace carvao_app.Repository.Conexao
+namespace salao_app.Repository.Conexao
 {
     public class DataBase
     {
         private readonly string _connectionString;
-        private readonly IConfiguration _configuration;
 
         public DataBase(IConfiguration configuration)
         {
@@ -17,7 +16,8 @@ namespace carvao_app.Repository.Conexao
 
         public static MySqlConnection Dbo(IConfiguration configuration)
         {
-            var con = new MySqlConnection(configuration["DefaultConnection"]);
+            var connectionString = new DataBase(configuration)._connectionString;
+            var con = new MySqlConnection(connectionString);
 
             try
             {

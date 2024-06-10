@@ -1087,6 +1087,7 @@
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "Microsoft.IdentityModel.Tokens": "6.35.0",
+          "System.IdentityModel.Tokens.Jwt": "6.35.0",
           "salao-app.Models": "1.0.0",
           "salao-app.Repository": "1.0.0"
         },
@@ -1117,7 +1118,8 @@
           "Dapper": "2.1.35",
           "Microsoft.Extensions.Configuration.Abstractions": "8.0.0",
           "MySql.Data": "8.3.0",
-          "MySql.EntityFrameworkCore": "8.0.0"
+          "MySql.EntityFrameworkCore": "8.0.0",
+          "System.IdentityModel.Tokens.Jwt": "6.35.0"
         },
         "compile": {
           "bin/placeholder/salao-app.Repository.dll": {}
@@ -3438,11 +3440,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Projetos\\salao\\salao-app\\salao-app.Application.csproj",
+      "projectUniqueName": "C:\\Users\\Carlos\\source\\repos\\Salao_back_end\\salao-app\\salao-app.Application.csproj",
       "projectName": "salao-app.Application",
-      "projectPath": "C:\\Projetos\\salao\\salao-app\\salao-app.Application.csproj",
+      "projectPath": "C:\\Users\\Carlos\\source\\repos\\Salao_back_end\\salao-app\\salao-app.Application.csproj",
       "packagesPath": "C:\\Users\\Carlos\\.nuget\\packages\\",
-      "outputPath": "C:\\Projetos\\salao\\salao-app\\obj\\",
+      "outputPath": "C:\\Users\\Carlos\\source\\repos\\Salao_back_end\\salao-app\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -3465,8 +3467,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Projetos\\salao\\salao-app.Business\\salao-app.Business.csproj": {
-              "projectPath": "C:\\Projetos\\salao\\salao-app.Business\\salao-app.Business.csproj"
+            "C:\\Users\\Carlos\\source\\repos\\Salao_back_end\\salao-app.Business\\salao-app.Business.csproj": {
+              "projectPath": "C:\\Users\\Carlos\\source\\repos\\Salao_back_end\\salao-app.Business\\salao-app.Business.csproj"
             }
           }
         }

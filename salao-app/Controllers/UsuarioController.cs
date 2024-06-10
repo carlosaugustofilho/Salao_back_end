@@ -1,49 +1,88 @@
-//using Microsoft.AspNetCore.Authorization;
-//using Microsoft.AspNetCore.Mvc;
-//using salao_app.Business.Interfaces;
-//using salao_app.Models.Requests;
-//using salao_app.Models.Dto;
-//using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using salao_app.Business.Interfaces;
+using salao_app.Models.Requests;
+using salao_app.Services.Interfaces;
 
-//[ApiController]
-//[Route("api/[controller]")]
-//public class UsuarioController : ControllerBase
-//{
-//    private readonly IUsuarioService _usuarioService;
+[ApiController]
+[Route("api/[controller]")]
+public class UsuarioController : ControllerBase
+{
+    private readonly IUsuarioService _usuarioService;
+    private readonly IBarbeiroService _barbeiroService;
 
-//    public UsuarioController(IUsuarioService usuarioService)
-//    {
-//        _usuarioService = usuarioService;
-//    }
+    public UsuarioController(IUsuarioService usuarioService, IBarbeiroService barbeiroService)
+    {
+        _usuarioService = usuarioService;
+        _barbeiroService = barbeiroService;
+    }
 
-//    [AllowAnonymous]
-//    [HttpPost("Login")]
-//    public IActionResult Login([FromBody] LoginRequest request)
-//    {
-//        var user = _usuarioService.Login(request.Cpf, request.Senha);
-//        if (user == null)
-//            return Unauthorized(new { message = "Usuário ou senha inválidos" });
+    [AllowAnonymous]
+    [HttpPost("Register")]
+    public IActionResult Register([FromBody] NovoUsuarioRequest request)
+    {
+        try
+        {
+            _usuarioService.CadastroUsuario(request);
+            return Ok(new { message = "Usuário registrado com sucesso!" });
+        }
+        catch (Exception ex)
+        {
+            return BadRequest(new { message = $"Erro ao registrar usuário: {ex.Message}" });
+        }
+    }
 
-//        var token = _usuarioService.GenerateJwtToken(user);
-//        return Ok(new { token });
-//    }
+    [AllowAnonymous]
+    [HttpPost("Login")]
+    public IActionResult Login([FromBody] LoginRequest request)
+    {
+        var user = _usuarioService.Login(request.Email, request.Senha);
 
-//    [HttpGet("{id}")]
-//    [Authorize]
-//    public IActionResult GetUserById(int id)
-//    {
-//        var user = _usuarioService.BuscarUsuarioId(id);
-//        if (user == null)
-//            return NotFound();
+        if (user == null)
+            return Unauthorized(new { message = "Usuário ou senha inválidos" });
+        return Ok(user);
+    }
 
-//        return Ok(user);
-//    }
 
-//    [HttpPost]
-//    [Authorize(Roles = "Admin")]
-//    public IActionResult CreateUser([FromBody] NovoUsuarioRequest request)
-//    {
-//        var user = _usuarioService.CadastroUsuario(request);
-//        return CreatedAtAction(nameof(GetUserById), new { id = user.Id }, user);
-//    }
-//}
+
+    [HttpGet]
+    [Route("/Usuario/TiposUsuarios")]
+    public async Task<IActionResult> GetTiposUsuarios()
+    {
+        try
+        {
+            var tipos = _usuarioService.BuscarTiposUsuarios();
+            return Ok(tipos);
+        }
+        catch (System.Exception ex)
+        {
+            return BadRequest(ex.Message);
+        }
+    }
+
+    [HttpGet("{id}")]
+    [Authorize]
+    public IActionResult GetUserById(int id)
+    {
+        var user = _usuarioService.BuscarUsuarioId(id);
+        if (user == null)
+            return NotFound();
+
+        return Ok(user);
+    }
+
+    [HttpPost("CriarBarbeiro")]
+    public IActionResult CriarBarbeiro([FromBody] BarbeiroRequest request)
+    {
+        try
+        {
+            _barbeiroService.CriarBarbeiro(request);
+            return Ok(new { message = "Barbeiro criado com sucesso." });
+        }
+        catch (Exception ex)
+        {
+            return BadRequest(new { message = ex.Message });
+        }
+    }
+
+}

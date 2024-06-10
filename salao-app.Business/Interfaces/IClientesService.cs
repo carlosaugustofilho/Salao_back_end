@@ -1,4 +1,5 @@
-﻿using salao_app.Models.DTOs;
+﻿using salao_app.Models.Dto;
+using salao_app.Models.DTOs;
 using salao_app.Models.Requests;
 using salao_app.Repository.Maps;
 using SalaoApp.Models;
@@ -14,9 +15,9 @@ namespace salao_app.Business.Interfaces
     {
         List<ClienteDto> BuscarClientes(string nome, string email);
         ClienteDto BuscarClientesId(int id);
-
+        List<HorarioDisponivelDto> ObterHorariosDisponiveis(int barbeiroId);
         void AgendarHorarioCliente(int clienteId, int barbeiroId, DateTime data, TimeSpan horaInicio, TimeSpan horaFim, int usuarioId);
-
+        void AtualizarStatusHorario(int horarioId, bool disponivel);
         void CancelarAgendamento(int agendamentoId);
 
         void CriarCliente(ClienteRequest request);

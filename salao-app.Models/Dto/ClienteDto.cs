@@ -9,7 +9,7 @@ namespace salao_app.Models.DTOs
         public int ClienteId { get; set; }
         public string Nome { get; set; }
         public string Email { get; set; }
-        public string Telefone { get; set; }
+        
         public DateTime? DataRegistro { get; set; }
 
         public List<ClienteDto> ToDtoList(List<ClienteMap> list)
@@ -20,11 +20,11 @@ namespace salao_app.Models.DTOs
             {
                 dto.Add(new ClienteDto
                 {
-                    ClienteId = map.clienteId.Value,
+                    ClienteId = map.clienteId,
 
                     Nome = map.nome,
                     Email = map.email,
-                    Telefone = map.telefone
+                   
                 });
             }
 
@@ -40,10 +40,10 @@ namespace salao_app.Models.DTOs
             }
             return new ClienteDto
             {
-               ClienteId= map.clienteId.Value,
+               ClienteId= map.clienteId,
                Email= map.email,
                Nome = map.nome,
-               Telefone = map.telefone,
+              
                DataRegistro = DataRegistro,
 
             };
