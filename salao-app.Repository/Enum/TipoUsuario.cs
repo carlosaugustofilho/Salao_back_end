@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace salao_app.Repository.Enum
 {
-    public enum PapelUsuario
+    public enum TipoUsuario
     {
         Cliente = 1,
         Barbeiro = 2,

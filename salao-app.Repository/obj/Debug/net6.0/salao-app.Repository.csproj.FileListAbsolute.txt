@@ -10,3 +10,27 @@ C:\Users\user\source\repos\salao-app\salao-app.Repository\obj\Debug\net6.0\salao
 C:\Users\user\source\repos\salao-app\salao-app.Repository\obj\Debug\net6.0\refint\salao-app.Repository.dll
 C:\Users\user\source\repos\salao-app\salao-app.Repository\obj\Debug\net6.0\salao-app.Repository.pdb
 C:\Users\user\source\repos\salao-app\salao-app.Repository\obj\Debug\net6.0\ref\salao-app.Repository.dll
+C:\Users\user\source\repos\salao-app - Copia\salao-app.Repository\bin\Debug\net6.0\salao-app.Repository.deps.json
+C:\Users\user\source\repos\salao-app - Copia\salao-app.Repository\bin\Debug\net6.0\salao-app.Repository.dll
+C:\Users\user\source\repos\salao-app - Copia\salao-app.Repository\bin\Debug\net6.0\salao-app.Repository.pdb
+C:\Users\user\source\repos\salao-app - Copia\salao-app.Repository\obj\Debug\net6.0\salao-app.Repository.csproj.AssemblyReference.cache
+C:\Users\user\source\repos\salao-app - Copia\salao-app.Repository\obj\Debug\net6.0\salao-app.Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\source\repos\salao-app - Copia\salao-app.Repository\obj\Debug\net6.0\salao-app.Repository.AssemblyInfoInputs.cache
+C:\Users\user\source\repos\salao-app - Copia\salao-app.Repository\obj\Debug\net6.0\salao-app.Repository.AssemblyInfo.cs
+C:\Users\user\source\repos\salao-app - Copia\salao-app.Repository\obj\Debug\net6.0\salao-app.Repository.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\salao-app - Copia\salao-app.Repository\obj\Debug\net6.0\salao-app.Repository.dll
+C:\Users\user\source\repos\salao-app - Copia\salao-app.Repository\obj\Debug\net6.0\refint\salao-app.Repository.dll
+C:\Users\user\source\repos\salao-app - Copia\salao-app.Repository\obj\Debug\net6.0\salao-app.Repository.pdb
+C:\Users\user\source\repos\salao-app - Copia\salao-app.Repository\obj\Debug\net6.0\ref\salao-app.Repository.dll
+C:\Projetos\salao-app - Copia\salao-app.Repository\bin\Debug\net6.0\salao-app.Repository.deps.json
+C:\Projetos\salao-app - Copia\salao-app.Repository\bin\Debug\net6.0\salao-app.Repository.dll
+C:\Projetos\salao-app - Copia\salao-app.Repository\bin\Debug\net6.0\salao-app.Repository.pdb
+C:\Projetos\salao-app - Copia\salao-app.Repository\obj\Debug\net6.0\salao-app.Repository.csproj.AssemblyReference.cache
+C:\Projetos\salao-app - Copia\salao-app.Repository\obj\Debug\net6.0\salao-app.Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projetos\salao-app - Copia\salao-app.Repository\obj\Debug\net6.0\salao-app.Repository.AssemblyInfoInputs.cache
+C:\Projetos\salao-app - Copia\salao-app.Repository\obj\Debug\net6.0\salao-app.Repository.AssemblyInfo.cs
+C:\Projetos\salao-app - Copia\salao-app.Repository\obj\Debug\net6.0\salao-app.Repository.csproj.CoreCompileInputs.cache
+C:\Projetos\salao-app - Copia\salao-app.Repository\obj\Debug\net6.0\salao-app.Repository.dll
+C:\Projetos\salao-app - Copia\salao-app.Repository\obj\Debug\net6.0\refint\salao-app.Repository.dll
+C:\Projetos\salao-app - Copia\salao-app.Repository\obj\Debug\net6.0\salao-app.Repository.pdb
+C:\Projetos\salao-app - Copia\salao-app.Repository\obj\Debug\net6.0\ref\salao-app.Repository.dll

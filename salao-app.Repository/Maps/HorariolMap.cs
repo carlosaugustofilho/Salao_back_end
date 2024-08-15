@@ -6,7 +6,6 @@ namespace SalaoApp.Models
     public class HorariolMap
     {
         public int HorarioId { get; set; }
-        public int BarbeiroId { get; set; }
     
         public DateTime Data { get; set; }
         public TimeSpan HoraInicio { get; set; }

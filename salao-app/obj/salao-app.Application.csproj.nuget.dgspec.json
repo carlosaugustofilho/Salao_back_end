@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Projetos\\salao\\salao-app\\salao-app.Application.csproj": {}
+    "C:\\Users\\Carlos\\source\\repos\\Salao_back_end\\salao-app\\salao-app.Application.csproj": {}
   },
   "projects": {
-    "C:\\Projetos\\salao\\salao-app.Business\\salao-app.Business.csproj": {
+    "C:\\Users\\Carlos\\source\\repos\\Salao_back_end\\salao-app.Business\\salao-app.Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projetos\\salao\\salao-app.Business\\salao-app.Business.csproj",
+        "projectUniqueName": "C:\\Users\\Carlos\\source\\repos\\Salao_back_end\\salao-app.Business\\salao-app.Business.csproj",
         "projectName": "salao-app.Business",
-        "projectPath": "C:\\Projetos\\salao\\salao-app.Business\\salao-app.Business.csproj",
+        "projectPath": "C:\\Users\\Carlos\\source\\repos\\Salao_back_end\\salao-app.Business\\salao-app.Business.csproj",
         "packagesPath": "C:\\Users\\Carlos\\.nuget\\packages\\",
-        "outputPath": "C:\\Projetos\\salao\\salao-app.Business\\obj\\",
+        "outputPath": "C:\\Users\\Carlos\\source\\repos\\Salao_back_end\\salao-app.Business\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -34,11 +34,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Projetos\\salao\\salao-app.Models\\salao-app.Models.csproj": {
-                "projectPath": "C:\\Projetos\\salao\\salao-app.Models\\salao-app.Models.csproj"
+              "C:\\Users\\Carlos\\source\\repos\\Salao_back_end\\salao-app.Models\\salao-app.Models.csproj": {
+                "projectPath": "C:\\Users\\Carlos\\source\\repos\\Salao_back_end\\salao-app.Models\\salao-app.Models.csproj"
               },
-              "C:\\Projetos\\salao\\salao-app.Repository\\salao-app.Repository.csproj": {
-                "projectPath": "C:\\Projetos\\salao\\salao-app.Repository\\salao-app.Repository.csproj"
+              "C:\\Users\\Carlos\\source\\repos\\Salao_back_end\\salao-app.Repository\\salao-app.Repository.csproj": {
+                "projectPath": "C:\\Users\\Carlos\\source\\repos\\Salao_back_end\\salao-app.Repository\\salao-app.Repository.csproj"
               }
             }
           }
@@ -54,6 +54,10 @@
           "targetAlias": "net6.0",
           "dependencies": {
             "Microsoft.IdentityModel.Tokens": {
+              "target": "Package",
+              "version": "[6.35.0, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
               "target": "Package",
               "version": "[6.35.0, )"
             }
@@ -78,14 +82,14 @@
         }
       }
     },
-    "C:\\Projetos\\salao\\salao-app.Models\\salao-app.Models.csproj": {
+    "C:\\Users\\Carlos\\source\\repos\\Salao_back_end\\salao-app.Models\\salao-app.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projetos\\salao\\salao-app.Models\\salao-app.Models.csproj",
+        "projectUniqueName": "C:\\Users\\Carlos\\source\\repos\\Salao_back_end\\salao-app.Models\\salao-app.Models.csproj",
         "projectName": "salao-app.Models",
-        "projectPath": "C:\\Projetos\\salao\\salao-app.Models\\salao-app.Models.csproj",
+        "projectPath": "C:\\Users\\Carlos\\source\\repos\\Salao_back_end\\salao-app.Models\\salao-app.Models.csproj",
         "packagesPath": "C:\\Users\\Carlos\\.nuget\\packages\\",
-        "outputPath": "C:\\Projetos\\salao\\salao-app.Models\\obj\\",
+        "outputPath": "C:\\Users\\Carlos\\source\\repos\\Salao_back_end\\salao-app.Models\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -108,8 +112,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Projetos\\salao\\salao-app.Repository\\salao-app.Repository.csproj": {
-                "projectPath": "C:\\Projetos\\salao\\salao-app.Repository\\salao-app.Repository.csproj"
+              "C:\\Users\\Carlos\\source\\repos\\Salao_back_end\\salao-app.Repository\\salao-app.Repository.csproj": {
+                "projectPath": "C:\\Users\\Carlos\\source\\repos\\Salao_back_end\\salao-app.Repository\\salao-app.Repository.csproj"
               }
             }
           }
@@ -143,14 +147,14 @@
         }
       }
     },
-    "C:\\Projetos\\salao\\salao-app.Repository\\salao-app.Repository.csproj": {
+    "C:\\Users\\Carlos\\source\\repos\\Salao_back_end\\salao-app.Repository\\salao-app.Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projetos\\salao\\salao-app.Repository\\salao-app.Repository.csproj",
+        "projectUniqueName": "C:\\Users\\Carlos\\source\\repos\\Salao_back_end\\salao-app.Repository\\salao-app.Repository.csproj",
         "projectName": "salao-app.Repository",
-        "projectPath": "C:\\Projetos\\salao\\salao-app.Repository\\salao-app.Repository.csproj",
+        "projectPath": "C:\\Users\\Carlos\\source\\repos\\Salao_back_end\\salao-app.Repository\\salao-app.Repository.csproj",
         "packagesPath": "C:\\Users\\Carlos\\.nuget\\packages\\",
-        "outputPath": "C:\\Projetos\\salao\\salao-app.Repository\\obj\\",
+        "outputPath": "C:\\Users\\Carlos\\source\\repos\\Salao_back_end\\salao-app.Repository\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -200,6 +204,10 @@
             "MySql.EntityFrameworkCore": {
               "target": "Package",
               "version": "[8.0.0, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.35.0, )"
             }
           },
           "imports": [
@@ -222,14 +230,14 @@
         }
       }
     },
-    "C:\\Projetos\\salao\\salao-app\\salao-app.Application.csproj": {
+    "C:\\Users\\Carlos\\source\\repos\\Salao_back_end\\salao-app\\salao-app.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projetos\\salao\\salao-app\\salao-app.Application.csproj",
+        "projectUniqueName": "C:\\Users\\Carlos\\source\\repos\\Salao_back_end\\salao-app\\salao-app.Application.csproj",
         "projectName": "salao-app.Application",
-        "projectPath": "C:\\Projetos\\salao\\salao-app\\salao-app.Application.csproj",
+        "projectPath": "C:\\Users\\Carlos\\source\\repos\\Salao_back_end\\salao-app\\salao-app.Application.csproj",
         "packagesPath": "C:\\Users\\Carlos\\.nuget\\packages\\",
-        "outputPath": "C:\\Projetos\\salao\\salao-app\\obj\\",
+        "outputPath": "C:\\Users\\Carlos\\source\\repos\\Salao_back_end\\salao-app\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -252,8 +260,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Projetos\\salao\\salao-app.Business\\salao-app.Business.csproj": {
-                "projectPath": "C:\\Projetos\\salao\\salao-app.Business\\salao-app.Business.csproj"
+              "C:\\Users\\Carlos\\source\\repos\\Salao_back_end\\salao-app.Business\\salao-app.Business.csproj": {
+                "projectPath": "C:\\Users\\Carlos\\source\\repos\\Salao_back_end\\salao-app.Business\\salao-app.Business.csproj"
               }
             }
           }

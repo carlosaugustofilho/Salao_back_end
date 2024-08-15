@@ -1,7 +1,7 @@
 ﻿using Dapper;
 using Microsoft.Extensions.Configuration;
+using salao_app.Repository.Conexao;
 using salao_app.Repository.Maps;
-using carvao_app.Repository.Conexao; 
 
 
 namespace salao_app.Repository.Services
@@ -26,8 +26,8 @@ namespace salao_app.Repository.Services
             }
 
             var query = @"
-        INSERT INTO Horario_disponivel (barbeiro_id, data, hora_inicio, hora_fim)
-        VALUES (@BarbeiroId, @Data, @HoraInicio, @HoraFim)";
+            INSERT INTO Horario_disponivel (barbeiro_id, data, hora_inicio, hora_fim)
+            VALUES (@BarbeiroId, @Data, @HoraInicio, @HoraFim)";
 
             var parameters = new DynamicParameters();
             parameters.Add("BarbeiroId", barbeiroId);
@@ -40,17 +40,17 @@ namespace salao_app.Repository.Services
 
         public List<HorarioDisponivelMap> ListarHorariosDisponiveis(int barbeiroId)
         {
-            var query = @"
-        SELECT 
-            id AS Id, 
-            barbeiro_id AS BarbeiroId, 
-            data AS Data, 
-            hora_inicio AS HoraInicio, 
-            hora_fim AS HoraFim
-        FROM 
-            Horario_disponivel
-        WHERE 
-            barbeiro_id = @BarbeiroId";
+                var query = @"
+            SELECT 
+                id AS Id, 
+                barbeiro_id AS BarbeiroId, 
+                data AS Data, 
+                hora_inicio AS HoraInicio, 
+                hora_fim AS HoraFim
+            FROM 
+                Horario_disponivel
+            WHERE 
+                barbeiro_id = @BarbeiroId";
 
             var parameters = new DynamicParameters();
             parameters.Add("BarbeiroId", barbeiroId);
@@ -80,7 +80,29 @@ namespace salao_app.Repository.Services
         }
 
 
+        public BarbeiroMap BuscarBarbeiroPorId(int barbeiroId)
+        {
+            var parameters = new DynamicParameters();
+            parameters.Add("@BarbeiroId", barbeiroId);
+            return DataBase.Execute<BarbeiroMap>(_configuration, "SELECT * FROM barbeiros WHERE barbeiro_id = @BarbeiroId", parameters).FirstOrDefault();
+        }
 
+        public void CriarBarbeiro(BarbeiroMap barbeiro)
+        {
+            var parameters = new DynamicParameters();
+            parameters.Add("@Nome", barbeiro.Nome);
+            parameters.Add("@Email", barbeiro.Email);
+            parameters.Add("@Descricao", barbeiro.Descricao);
+            parameters.Add("@UrlFoto", barbeiro.UrlFoto);
+            parameters.Add("@UsuarioId", barbeiro.UsuarioId);
 
+            var query = @"INSERT INTO barbeiros (nome, email, descricao, url_foto, usuario_id)
+                          VALUES (@Nome, @Email, @Descricao, @UrlFoto, @UsuarioId);";
+
+            DataBase.Execute(_configuration, query, parameters);
+        }
+
+        
     }
 }
+ 

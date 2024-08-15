@@ -10,7 +10,9 @@ namespace salao_app.Repository.Intefaces
 
         void AgendarHorarioCliente(int clienteId, int barbeiroId, DateTime data, TimeSpan horaInicio, TimeSpan horaFim, int usuarioId);
         void CancelarAgendamento(int agendamentoId);
+        List<HorarioDisponivelMap> ObterHorariosDisponiveis(int barbeiroId);
 
+        void AtualizarStatusHorario(int horarioId, bool disponivel);
         void CriarCliente(ClienteMap cliente);
         void AtualizarCliente(ClienteMap cliente);
         void DeletarCliente(int id);

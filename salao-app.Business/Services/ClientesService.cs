@@ -1,10 +1,12 @@
 ﻿using salao_app.Business.Interfaces;
+using salao_app.Models.Dto;
 using salao_app.Models.DTOs;
 using salao_app.Models.Requests;
 using salao_app.Repository.Intefaces;
 using salao_app.Repository.Maps;
-using SalaoApp.Models;
-using System.Security.Cryptography;
+using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace salao_app.Business.Services
 {
@@ -23,7 +25,6 @@ namespace salao_app.Business.Services
             {
                 nome = request.nome,
                 usuarioId = request.usuarioId,
-                telefone = request.telefone,
                 email = request.email,
             };
 
@@ -35,15 +36,11 @@ namespace salao_app.Business.Services
             _repository.CriarCliente(map);
         }
 
-
-
         public List<ClienteDto> BuscarClientes(string nome, string email)
         {
-            ClienteMap cliente = new ClienteMap();
             var resposta = _repository.BuscarClientes(nome, email);
             return new ClienteDto().ToDtoList(resposta.OrderBy(c => c.nome).ToList());
         }
-
 
         public ClienteDto BuscarClientesId(int id)
         {
@@ -55,17 +52,36 @@ namespace salao_app.Business.Services
 
             return new ClienteDto
             {
-                ClienteId = resposta.clienteId ?? 0,
+                ClienteId = resposta.clienteId,
                 Nome = resposta.nome,
                 Email = resposta.email,
-                Telefone = resposta.telefone
             };
         }
 
         public void AgendarHorarioCliente(int clienteId, int barbeiroId, DateTime data, TimeSpan horaInicio, TimeSpan horaFim, int usuarioId)
         {
-            _repository.AgendarHorarioCliente(clienteId, barbeiroId, data, horaInicio ,horaFim, usuarioId);
+            _repository.AgendarHorarioCliente(clienteId, barbeiroId, data, horaInicio, horaFim, usuarioId);
         }
+
+        public List<HorarioDisponivelDto> ObterHorariosDisponiveis(int barbeiroId)
+        {
+            var horariosMap = _repository.ObterHorariosDisponiveis(barbeiroId);
+            var horariosDto = horariosMap.Select(h => new HorarioDisponivelDto
+            {
+                Id = h.Id,
+                BarbeiroId = h.BarbeiroId,
+                HoraInicio = h.HoraInicio,
+                HoraFim = h.HoraFim,
+                Data = h.Data
+            }).ToList();
+
+            return horariosDto;
+        }
+        public void AtualizarStatusHorario(int horarioId, bool disponivel)
+        {
+            _repository.AtualizarStatusHorario(horarioId, disponivel);
+        }
+
 
         public void CancelarAgendamento(int agendamentoId)
         {
@@ -86,5 +102,7 @@ namespace salao_app.Business.Services
         {
             return _repository.ExistCliente(cliente);
         }
+
+       
     }
 }

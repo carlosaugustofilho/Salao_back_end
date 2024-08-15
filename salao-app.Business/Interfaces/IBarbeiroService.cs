@@ -1,4 +1,8 @@
-﻿namespace salao_app.Services.Interfaces
+﻿using salao_app.Models.Dtos;
+using salao_app.Models.Requests;
+using salao_app.Repository.Maps;
+
+namespace salao_app.Services.Interfaces
 {
     public interface IBarbeiroService
     {
@@ -8,5 +12,8 @@
 
         List<HorarioDisponivelMap> ListarHorariosDisponiveisPorData(int barbeiroId, DateTime data);
 
+        BarbeiroDto BuscarBarbeiroPorId(int barbeiroId);
+
+        void CriarBarbeiro(BarbeiroRequest reques);
     }
 }

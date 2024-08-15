@@ -5,12 +5,9 @@ namespace salao_app.Repository.Interfaces
 {
     public interface IUsuarioRepository
     {
-        List<UsuarioMap> ListaUsuarios();
-        UsuarioMap BuscarUsuarioId(int id);
         void CadastroUsuario(UsuarioMap usuario);
-        void UpdateUsuario(UsuarioMap usuario);
-        void DeleteUsuario(int id);
-        UsuarioMap Login(string cpf, string senha);
+        UsuarioMap Login(string email, string senha);
+        UsuarioMap BuscarUsuarioId(int id);
         object BuscarTiposUsuarios();
     }
 }
