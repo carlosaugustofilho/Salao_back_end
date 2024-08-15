@@ -25,18 +25,22 @@ namespace salao_app.Repository.Services
                 throw new ArgumentException("Barbeiro não encontrado.");
             }
 
+            // Ajuste de fuso horário ou formatação, se necessário
+            var dataUtc = data.ToUniversalTime();
+
             var query = @"
             INSERT INTO Horario_disponivel (barbeiro_id, data, hora_inicio, hora_fim)
             VALUES (@BarbeiroId, @Data, @HoraInicio, @HoraFim)";
 
             var parameters = new DynamicParameters();
             parameters.Add("BarbeiroId", barbeiroId);
-            parameters.Add("Data", data);
+            parameters.Add("Data", dataUtc);
             parameters.Add("HoraInicio", horaInicio);
             parameters.Add("HoraFim", horaFim);
 
             DataBase.Execute(_configuration, query, parameters);
         }
+
 
         public List<HorarioDisponivelMap> ListarHorariosDisponiveis(int barbeiroId)
         {
@@ -102,7 +106,25 @@ namespace salao_app.Repository.Services
             DataBase.Execute(_configuration, query, parameters);
         }
 
-        
+        public List<AgendamentoMap> ListarTodosAgendamentos()
+        {
+            var query = @"
+        SELECT 
+            agendamento_id AS AgendamentoId, 
+            cliente_id AS ClienteId, 
+            barbeiro_id AS BarbeiroId, 
+            horario_disponiveis_id AS HorarioDisponiveisId, 
+            data_hora_agendamento AS DataHoraAgendamento, 
+            status AS Status, 
+            observacoes AS Observacoes
+        FROM 
+            agendamentos";
+
+            var result = DataBase.Execute<AgendamentoMap>(_configuration, query, new { }).ToList();
+            return result;
+        }
+
+
     }
 }
  

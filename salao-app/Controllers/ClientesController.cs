@@ -91,8 +91,6 @@ namespace salao_app.Controllers
         }
 
 
-
-
         [HttpPost]
         [Route("CancelarAgendamento")]
         public IActionResult CancelarAgendamento([FromBody] CancelarAgendamentoRequest request)

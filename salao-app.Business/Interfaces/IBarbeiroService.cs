@@ -10,10 +10,14 @@ namespace salao_app.Services.Interfaces
 
         List<HorarioDisponivelMap> ListarHorariosDisponiveis(int barbeiroId);
 
-        List<HorarioDisponivelMap> ListarHorariosDisponiveisPorData(int barbeiroId, DateTime data);
 
         BarbeiroDto BuscarBarbeiroPorId(int barbeiroId);
 
         void CriarBarbeiro(BarbeiroRequest reques);
+
+        List<AgendamentoMap> ListarTodosAgendamentos();
+
+
+
     }
 }

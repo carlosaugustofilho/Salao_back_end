@@ -38,22 +38,7 @@ namespace salao_app.Services
             return _barbeiroRepository.ListarHorariosDisponiveis(barbeiroId);
         }
 
-        public List<HorarioDisponivelMap> ListarHorariosDisponiveisPorData(int barbeiroId, DateTime data)
-        {
-            return _barbeiroRepository.ListarHorariosDisponiveisPorData(barbeiroId, data);
-        }
-
-        public BarbeiroDto BuscarBarbeiroPorId(int barbeiroId)
-        {
-            var barbeiroMap = _barbeiroRepository.BuscarBarbeiroPorId(barbeiroId);
-            if (barbeiroMap == null)
-            {
-                return null;
-            }
-            return BarbeiroDto.ToDto(barbeiroMap);
-        }
-
-
+      
         public void CriarBarbeiro(BarbeiroRequest request)
         {
             var usuario = new UsuarioMap
@@ -79,8 +64,15 @@ namespace salao_app.Services
             _barbeiroRepository.CriarBarbeiro(barbeiro);
         }
 
-        
+        public List<AgendamentoMap> ListarTodosAgendamentos()
+        {
+            return _barbeiroRepository.ListarTodosAgendamentos();
+        }
 
+        public BarbeiroDto BuscarBarbeiroPorId(int barbeiroId)
+        {
+            throw new NotImplementedException();
+        }
     }
 
 
