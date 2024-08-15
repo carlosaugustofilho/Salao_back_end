@@ -19,6 +19,18 @@ namespace salao_app.Repository.Services
 
         public void CadastroUsuario(UsuarioMap usuario)
         {
+            // Verificar se o usuário já existe com o mesmo email
+            var parametersCheck = new DynamicParameters();
+            parametersCheck.Add("@Email", usuario.Email);
+
+            var queryCheck = @"SELECT COUNT(1) FROM usuarios WHERE email = @Email";
+            var userExists = DataBase.Execute<int>(_configuration, queryCheck, parametersCheck).FirstOrDefault() > 0;
+
+            if (userExists)
+            {
+                throw new Exception("Já existe um usuário registrado com este email.");
+            }
+
             var parameters = new DynamicParameters();
             parameters.Add("@Nome", usuario.Nome);
             parameters.Add("@Email", usuario.Email);
@@ -33,7 +45,7 @@ namespace salao_app.Repository.Services
             var usuarioId = DataBase.Execute<int>(_configuration, queryUsuario, parameters).FirstOrDefault();
             usuario.Id = usuarioId;
 
-            if (usuario.PapelId == 1) 
+            if (usuario.PapelId == 1)
             {
                 var parametersCliente = new DynamicParameters();
                 parametersCliente.Add("@Nome", usuario.Nome);

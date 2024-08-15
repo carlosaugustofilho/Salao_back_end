@@ -49,3 +49,20 @@ C:\Projetos\salao-app - Copia\salao-app.Business\obj\Debug\net6.0\salao-app.Busi
 C:\Projetos\salao-app - Copia\salao-app.Business\obj\Debug\net6.0\refint\salao-app.Business.dll
 C:\Projetos\salao-app - Copia\salao-app.Business\obj\Debug\net6.0\salao-app.Business.pdb
 C:\Projetos\salao-app - Copia\salao-app.Business\obj\Debug\net6.0\ref\salao-app.Business.dll
+C:\Users\Carlos\source\repos\Salao_back_end\salao-app.Business\bin\Debug\net6.0\salao-app.Business.deps.json
+C:\Users\Carlos\source\repos\Salao_back_end\salao-app.Business\bin\Debug\net6.0\salao-app.Business.dll
+C:\Users\Carlos\source\repos\Salao_back_end\salao-app.Business\bin\Debug\net6.0\salao-app.Business.pdb
+C:\Users\Carlos\source\repos\Salao_back_end\salao-app.Business\bin\Debug\net6.0\salao-app.Models.dll
+C:\Users\Carlos\source\repos\Salao_back_end\salao-app.Business\bin\Debug\net6.0\salao-app.Repository.dll
+C:\Users\Carlos\source\repos\Salao_back_end\salao-app.Business\bin\Debug\net6.0\salao-app.Models.pdb
+C:\Users\Carlos\source\repos\Salao_back_end\salao-app.Business\bin\Debug\net6.0\salao-app.Repository.pdb
+C:\Users\Carlos\source\repos\Salao_back_end\salao-app.Business\obj\Debug\net6.0\salao-app.Business.csproj.AssemblyReference.cache
+C:\Users\Carlos\source\repos\Salao_back_end\salao-app.Business\obj\Debug\net6.0\salao-app.Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Carlos\source\repos\Salao_back_end\salao-app.Business\obj\Debug\net6.0\salao-app.Business.AssemblyInfoInputs.cache
+C:\Users\Carlos\source\repos\Salao_back_end\salao-app.Business\obj\Debug\net6.0\salao-app.Business.AssemblyInfo.cs
+C:\Users\Carlos\source\repos\Salao_back_end\salao-app.Business\obj\Debug\net6.0\salao-app.Business.csproj.CoreCompileInputs.cache
+C:\Users\Carlos\source\repos\Salao_back_end\salao-app.Business\obj\Debug\net6.0\salao-app.Business.csproj.CopyComplete
+C:\Users\Carlos\source\repos\Salao_back_end\salao-app.Business\obj\Debug\net6.0\salao-app.Business.dll
+C:\Users\Carlos\source\repos\Salao_back_end\salao-app.Business\obj\Debug\net6.0\refint\salao-app.Business.dll
+C:\Users\Carlos\source\repos\Salao_back_end\salao-app.Business\obj\Debug\net6.0\salao-app.Business.pdb
+C:\Users\Carlos\source\repos\Salao_back_end\salao-app.Business\obj\Debug\net6.0\ref\salao-app.Business.dll

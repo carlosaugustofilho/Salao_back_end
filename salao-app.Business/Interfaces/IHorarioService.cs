@@ -9,5 +9,6 @@ namespace salao_app.Business.Interfaces
         HorariolMap BuscarHorarioPorId(int horarioId);
         void AtualizarHorario(HorariolMap horario);
         void DeletarHorario(int horarioId);
+
     }
 }

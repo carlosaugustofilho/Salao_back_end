@@ -8,7 +8,8 @@ namespace salao_app.Repository.Services
         void AdicionarHorarioDisponivel(int barbeiroId, DateTime data, TimeSpan horaInicio, TimeSpan horaFim);
         List<HorarioDisponivelMap> ListarHorariosDisponiveis(int barbeiroId);
         List<HorarioDisponivelMap> ListarHorariosDisponiveisPorData(int barbeiroId, DateTime data);
-        BarbeiroMap  BuscarBarbeiroPorId(int usuarioId); // Mudança no tipo de retorno
+        BarbeiroMap BuscarBarbeiroPorId(int usuarioId); // Mudança no tipo de retorno
+        public List<AgendamentoMap> ListarTodosAgendamentos();
         void CriarBarbeiro(BarbeiroMap barbeiro);
     }
 }

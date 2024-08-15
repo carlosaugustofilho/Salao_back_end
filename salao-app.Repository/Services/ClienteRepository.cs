@@ -28,6 +28,18 @@ namespace salao_app.Repository.Services
 
         public void CriarCliente(ClienteMap cliente)
         {
+            // Verificar se o cliente já existe com o mesmo email
+            var parametersCheck = new DynamicParameters();
+            parametersCheck.Add("@Email", cliente.email);
+
+            var queryCheck = @"SELECT COUNT(1) FROM cliente WHERE email = @Email";
+            var clientExists = DataBase.Execute<int>(_configuration, queryCheck, parametersCheck).FirstOrDefault() > 0;
+
+            if (clientExists)
+            {
+                throw new Exception("Já existe um cliente registrado com este email.");
+            }
+
             var clientes = new DynamicParameters();
             clientes.Add("@nome", cliente.nome);
             clientes.Add("@usuario_id", cliente.usuarioId);
@@ -36,6 +48,7 @@ namespace salao_app.Repository.Services
             var query = "INSERT INTO cliente(nome, usuario_id, email) VALUES (@nome, @usuario_id, @email)";
             DataBase.Execute(_configuration, query, clientes);
         }
+
 
         public ClienteMap BuscarClientePorUsuarioId(int usuarioId)
         {

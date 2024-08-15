@@ -44,7 +44,6 @@ public class UsuarioController : ControllerBase
     }
 
 
-
     [HttpGet]
     [Route("/Usuario/TiposUsuarios")]
     public async Task<IActionResult> GetTiposUsuarios()

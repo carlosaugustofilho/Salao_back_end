@@ -18,6 +18,7 @@ namespace salao_app.Controllers
             _logger = logger;
         }
 
+        
         [HttpGet]
         [Route("/api/Horario/BuscarTodosHorarios/")]
         public IActionResult BuscarTodosHorarios(DateTime data)

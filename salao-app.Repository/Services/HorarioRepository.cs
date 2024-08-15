@@ -25,8 +25,9 @@ namespace salao_app.Repository.Services
             throw new NotImplementedException();
         }
 
-
        
+
+
         public void AtualizarHorario(HorariolMap horario)
         {
             throw new NotImplementedException();

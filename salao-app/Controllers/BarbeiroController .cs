@@ -43,12 +43,7 @@ public class BarbeiroController : ControllerBase
         }
     }
 
-    [HttpGet("ListarHorariosDisponiveisPorData")]
-    public IActionResult ListarHorariosDisponiveisPorData(int barbeiroId, DateTime data)
-    {
-        var horarios = _barbeiroService.ListarHorariosDisponiveisPorData(barbeiroId, data);
-        return Ok(horarios);
-    }
+    
 
     [HttpPost("CriarBarbeiro")]
     public IActionResult CriarBarbeiro([FromBody] BarbeiroRequest request)
@@ -80,6 +75,21 @@ public class BarbeiroController : ControllerBase
             return BadRequest(new { message = ex.Message });
         }
     }
+
+    [HttpGet("ListarTodosAgendamentos")]
+    public IActionResult ListarTodosAgendamentos()
+    {
+        try
+        {
+            var agendamentos = _barbeiroService.ListarTodosAgendamentos();
+            return Ok(agendamentos);
+        }
+        catch (Exception ex)
+        {
+            return BadRequest(new { message = ex.Message });
+        }
+    }
+
 
 }
 

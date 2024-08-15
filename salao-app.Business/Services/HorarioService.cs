@@ -4,6 +4,7 @@ using salao_app.Business.Interfaces;
 using salao_app.Models;
 using salao_app.Repository.Interfaces;
 using salao_app.Repository.Maps;
+using salao_app.Repository.Services;
 using SalaoApp.Models;
 
 namespace salao_app.Business.Services
@@ -29,10 +30,7 @@ namespace salao_app.Business.Services
             return _horarioDisponivelRepository.BuscarHorarioPorId(horarioId);
         }
 
-        //public void AgendarHorario(HorariolMap horario)
-        //{
-        //    _horarioDisponivelRepository.AgendarHorario(horario);
-        //}
+
 
         public void AtualizarHorario(HorariolMap horario)
         {
